@@ -1,3 +1,5 @@
 %{
+  "crc": {:hex, :crc, "0.10.1", "87a0478e5a930926f1062397c9eb32d981f6b3abbc352d6d6fecf45a1725b249", [:mix, :rebar3], [{:elixir_make, "~> 0.6", [hex: :elixir_make, repo: "hexpm", optional: false]}], "hexpm", "ed3a9a673d4726fd12d6f58811f014e33cb3926b28f9639b12456ccb241d0f9b"},
+  "elixir_make": {:hex, :elixir_make, "0.6.2", "7dffacd77dec4c37b39af867cedaabb0b59f6a871f89722c25b28fcd4bd70530", [:mix], [], "hexpm", "03e49eadda22526a7e5279d53321d1cced6552f344ba4e03e619063de75348d9"},
   "eqrcode": {:hex, :eqrcode, "0.1.7", "2c6674e0c22854355b0adc2e6c987a3a973c31eeb49870e72a1e463317d59014", [:mix], [], "hexpm", "391c7945e8a079e9b4aef3f98d601575213ae4d78a3098542d6f39358627100f"},
 }

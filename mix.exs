@@ -20,6 +20,7 @@ defmodule ExPIXQR.MixProject do
   defp deps do
     [
       {:eqrcode, "~> 0.1.7"},
+      {:crc, "~> 0.10.1"},
     ]
   end
 end
