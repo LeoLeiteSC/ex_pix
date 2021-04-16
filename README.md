@@ -33,7 +33,9 @@ config :ex_pix, :static_code,
   initiation_method: "11",
   gui: "br.gov.bcb.pix",
   currency_code: "986",
-  country_code: "BR"
+  country_code: "BR",
+  default_amount: "0.00",
+  category_code: "0000"
 ```
 
 If you need to change any of these fields, you can replace this configuration in your own configuration file.
