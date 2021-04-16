@@ -1,14 +1,14 @@
-defmodule ExPIXQR.Code.Validation do
+defmodule ExPIX.Code.Validation do
   @moduledoc """
   Module with basic validations
   """
 
-  alias ExPIXQR.Data.{
+  alias ExPIX.Data.{
     Additional,
     Static,
     StaticAccount,
   }
-  alias ExPIXQR.Code.Helpers
+  alias ExPIX.Code.Helpers
 
   def validate_field(:account_information, %StaticAccount{} = value) do
     struct_length = Helpers.total_struct_length(value)

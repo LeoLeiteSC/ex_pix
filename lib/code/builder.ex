@@ -1,14 +1,14 @@
-defmodule ExPIXQR.Code.Builder do
+defmodule ExPIX.Code.Builder do
   @moduledoc """
   Functions to build the string code
   """
 
-  alias ExPIXQR.Data.{
+  alias ExPIX.Data.{
     Additional,
     Static,
     StaticAccount,
   }
-  alias ExPIXQR.Code.{
+  alias ExPIX.Code.{
     Helpers,
     Validation,
   }

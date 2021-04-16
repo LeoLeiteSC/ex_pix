@@ -1,4 +1,4 @@
-defmodule ExPIXQR.Code.Helpers do
+defmodule ExPIX.Code.Helpers do
   @moduledoc """
   Module with helper functions
   """

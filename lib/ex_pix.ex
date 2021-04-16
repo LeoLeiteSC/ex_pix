@@ -1,21 +1,25 @@
-defmodule ExPIXQR do
+defmodule ExPIX do
   @moduledoc """
-  Documentation for `ExPIXQR`.
+  Documentation for `ExPIX`.
   """
 
-  alias ExPIXQR.Data.{
+  alias ExPIX.Data.{
     Additional,
     Static,
     StaticAccount,
   }
-  alias ExPIXQR.Code.Builder
+  alias ExPIX.Code.Builder
 
   @type static_params :: %{
     required(:merchant_name) => String.t,
     required(:merchant_city) => String.t,
-    optional(:postal_code) => String.t,
     optional(:amount) => String.t,
+    optional(:payload_indicator) => String.t,
     optional(:initiation_method) => String.t,
+    optional(:category_code) => String.t,
+    optional(:currency_code) => String.t,
+    optional(:country_code) => String.t,
+    optional(:postal_code) => String.t,
   }
 
   @type account_params :: %{optional(:info) => String.t}

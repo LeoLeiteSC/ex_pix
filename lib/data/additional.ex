@@ -1,4 +1,4 @@
-defmodule ExPIXQR.Data.Additional do
+defmodule ExPIX.Data.Additional do
   @moduledoc """
   Struct representing the additional information
   """

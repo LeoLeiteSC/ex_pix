@@ -1,21 +1,21 @@
-defmodule ExPIXQR.Data.Static do
+defmodule ExPIX.Data.Static do
   @moduledoc """
   Struct representing the static data
   """
 
-  alias ExPIXQR.Data.{
+  alias ExPIX.Data.{
     StaticAccount,
     Additional,
   }
 
   defstruct [
-    payload_indicator: Application.get_env(:ex_pixqr, :static)[:payload_indicator],
-    initiation_method: Application.get_env(:ex_pixqr, :static)[:initiation_method],
+    payload_indicator: Application.get_env(:ex_pix, :static_code)[:payload_indicator],
+    initiation_method: Application.get_env(:ex_pix, :static_code)[:initiation_method],
     account_information: %StaticAccount{},
-    category_code: "0000",
-    currency_code: Application.get_env(:ex_pixqr, :static)[:currency_code],
-    amount: "0.00",
-    country_code: Application.get_env(:ex_pixqr, :static)[:country_code],
+    category_code: Application.get_env(:ex_pix, :static_code)[:category_code],
+    currency_code: Application.get_env(:ex_pix, :static_code)[:currency_code],
+    amount: Application.get_env(:ex_pix, :static_code)[:default_amount],
+    country_code: Application.get_env(:ex_pix, :static_code)[:country_code],
     merchant_name: "",
     merchant_city: "",
     postal_code: "",
